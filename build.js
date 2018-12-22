@@ -15,10 +15,13 @@ const options = {
 
 // Text + chalk definitions
 const data = {
-  name: chalk.white('               Brandon Cox'),
+  name: chalk.white.bold('               Brandon Cox'),
   handle: chalk.white('bcox'),
-  work: chalk.white('Software Engineer at RedVentures'),
-  opensource: chalk.white('Node.js Community Committee ') + chalk.green('⬢'),
+  work:
+    chalk.white.bold('Software Engineer') +
+    chalk.white(' @ ') +
+    chalk.red.bold.bgBlack('RedVentures'),
+  opensource: chalk.white('TODO ') + chalk.green('⬢'),
   twitter: chalk.gray('https://twitter.com/') + chalk.cyan('bcox_tech'),
   npm: chalk.gray('https://npmjs.com/') + chalk.red('~bcox'),
   github: chalk.gray('https://github.com/') + chalk.green('bc0x'),
@@ -39,9 +42,8 @@ const data = {
 
 // Actual strings we're going to output
 const newline = '\n';
-const heading = `${data.name} / ${data.handle}`;
+const heading = `${data.name} ${chalk.gray('|')} ${data.handle}`;
 const working = `${data.labelWork}  ${data.work}`;
-const opensourcing = `${data.labelOpenSource}  ${data.opensource}`;
 const twittering = `${data.labelTwitter}  ${data.twitter}`;
 const npming = `${data.labelnpm}  ${data.npm}`;
 const githubing = `${data.labelGitHub}  ${data.github}`;
@@ -57,20 +59,20 @@ const output =
   working +
   newline + // data.labelWork + data.work
   newline + // data.labelOpenSource + data.opensource
+  githubing +
+  newline + // data.labelGitHub + data.github
+  webing +
+  newline +
   twittering +
   newline + // data.labelTwitter + data.twitter
   npming +
   newline + // data.labelnpm + data.npm
-  githubing +
-  newline + // data.labelGitHub + data.github
   linkedining +
   newline + // data.labelLinkedIn + data.linkedin
-  webing +
-  newline +
   newline + // data.labelWeb + data.web
   carding; // data.labelCard + data.npx
 
 fs.writeFileSync(
   path.join(__dirname, 'bin/output'),
-  chalk.green(boxen(output, options)),
+  chalk.cyan(boxen(output, options)),
 );
