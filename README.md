@@ -9,4 +9,4 @@
 - When done `npm publish`
 - Run the package using `npx <package-name>`
 
-[card]: ./assets/bcox-card.png 'bcox card'
+[card]: ./assets/bcox.png 'bcox card'
