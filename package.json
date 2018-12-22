@@ -1,0 +1,35 @@
+{
+  "name": "bcox-card",
+  "version": "1.0.0",
+  "description": "A personal card for Brandon Cox (@bcox_tech)",
+  "main": "/bin/card.js",
+  "bin": {
+    "bcox": "/bin/card.js"
+  },
+  "scripts": {
+    "prepublish": "npm run build",
+    "build": "node build.js",
+    "dev": "npm run build && node ./bin/card.js",
+    "lint": "standard",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "card",
+    "npm",
+    "npm card",
+    "npx",
+    "npx card",
+    "business card"
+  ],
+  "author": "Brandon Cox <@bcox_tech> (www.bcox.tech)",
+  "license": "MIT",
+  "files": [
+    "bin/card.js",
+    "bin/output"
+  ],
+  "devDependencies": {
+    "boxen": "^2.1.0",
+    "chalk": "^2.4.1",
+    "standard": "^12.0.1"
+  }
+}
