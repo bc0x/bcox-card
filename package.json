@@ -1,10 +1,10 @@
 {
-  "name": "bcox-card",
-  "version": "1.0.0",
+  "name": "bcox",
+  "version": "1.0.1",
   "description": "A personal card for Brandon Cox (@bcox_tech)",
   "main": "/bin/card.js",
   "bin": {
-    "bcox": "/bin/card.js"
+    "bcox": "./bin/card.js"
   },
   "scripts": {
     "prepublish": "npm run build",
