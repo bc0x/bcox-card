@@ -16,7 +16,7 @@ const options = {
 // Text + chalk definitions
 const data = {
   name: chalk.white.bold('               Brandon Cox'),
-  handle: chalk.white('bcox'),
+  handle: chalk.white('@bcox'),
   work:
     chalk.white.bold('Software Engineer') +
     chalk.white(' @ ') +
