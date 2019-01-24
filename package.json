@@ -1,6 +1,6 @@
 {
-  "name": "bcox",
-  "version": "1.0.4",
+  "name": "@bcox/card",
+  "version": "1.0.6",
   "description": "A personal card for Brandon Cox (@bcox_tech)",
   "main": "/bin/card.js",
   "bin": {

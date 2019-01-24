@@ -28,7 +28,7 @@ const data = {
   linkedin:
     chalk.gray('https://linkedin.com/in/') +
     chalk.blue('brandon-cox-1039116a/'),
-  web: chalk.cyan('https://bcox.tech'),
+  web: chalk.cyan('https://brandoncox.tech'),
   npx: chalk.red('npx') + ' ' + chalk.white('bcox'),
   labelWork: chalk.white.bold('       Work:'),
   labelOpenSource: chalk.white.bold('Open Source:'),
